@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn=findViewById(R.id.button);
         btn.setText("Szukaj");
         String nip;
-       // nip=String.valueOf(text.getText());
+        // nip=String.valueOf(text.getText());
         //526025027452
         text=findViewById(R.id.editText);
         text.setHint("Wprowadz nip");
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //9270101431
                 String url = "https://wl-api.mf.gov.pl/api/search/nip/"+text.getText()+generatedDate;
-                        //"?date=2021-12-05";
+                //"?date=2021-12-05";
                 volleyWork(textView,url);
 
             }
